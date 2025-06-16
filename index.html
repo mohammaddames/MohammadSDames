@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>المهندس محمد دامس - السيرة الذاتية</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      direction: rtl;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    img.logo {
+      max-width: 150px;
+      margin: 0 auto 20px;
+      display: block;
+    }
+
+    h1 {
+      color: #1d3557;
+      margin-bottom: 30px;
+    }
+
+    .lang-switch {
+      margin-bottom: 20px;
+    }
+
+    .lang-switch button {
+      margin: 0 10px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #0077b6;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .lang-switch button:hover {
+      background-color: #005f87;
+    }
+
+    .bio, .bio-english {
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      line-height: 1.8;
+      text-align: start;
+    }
+
+    .bio {
+      background: #f1f5f9;
+    }
+
+    .bio-english {
+      background: #eef6fb;
+      direction: ltr;
+      font-family: 'Arial', sans-serif;
+      display: none;
+    }
+
+    .bio h2, .bio-english h2 {
+      color: #1d3557;
+      font-size: 1.5em;
+    }
+
+    .btn-download {
+      display: inline-block;
+      background-color: #0077b6;
+      color: white;
+      padding: 12px 20px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-download:hover {
+      background-color: #005f87;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: #e9ecef;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0077b6;
+      font-weight: bold;
+    }
+
+    .platform {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: start;
+    }
+
+    .platform-icon {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- الشعار -->
+    <img src="القناة الهندسية.png" alt="شعار MSD" class="logo" />
+
+    <h1>المهندس محمد دامس</h1>
+
+    <!-- أزرار تغيير اللغة -->
+    <div class="lang-switch">
+      <button onclick="showArabic()">العربية</button>
+      <button onclick="showEnglish()">English</button>
+    </div>
+
+    <!-- زر تحميل السيرة الذاتية -->
+    <a href="Eng Mohammad Dames.docx" class="btn-download" download>
+      تحميل السيرة الذاتية (Word)
+    </a>
+
+    <!-- السيرة الذاتية بالعربية -->
+    <div class="bio" id="arabicCV">
+      <h2>السيرة الذاتية (العربية)</h2>
+      <p><strong>المهندس محمد سمير دامس</strong> مهندس مدني سوري حاصل على درجة البكالوريوس من جامعة إدلب (2020، بمعدل 78.13). لديه خبرة واسعة في تصميم والإشراف وتنفيذ مشاريع البنية التحتية، المياه والصرف الصحي، ومشاريع المأوى ضمن منظمات إنسانية مثل الإغاثة الإسلامية، أورانج، بهار، وIYD.</p>
+      <p>يتقن استخدام برامج AutoCAD، Revit، ETABS، SAP2000، SewerGEMS، Excel، Power BI، وMS Project، وهو مدرب معتمد في مجالات التصميم والتحليل وتوثيق المشاريع.</p>
+      <p>يسعى لتطوير مهاراته بشكل دائم عبر منصات تعليمية، ويقدّم محتوى هندسي عبر الإنترنت لدعم المهندسين الشباب.</p>
+    </div>
+
+    <!-- السيرة الذاتية بالإنجليزية -->
+    <div class="bio-english" id="englishCV">
+      <h2>Curriculum Vitae (English)</h2>
+      <p><strong>Eng. Mohammad Samir Dames</strong> is a Syrian civil engineer with a Bachelor's degree from the University of Idlib (2020, GPA: 78.13). He has extensive experience in infrastructure, WASH, and shelter projects with organizations like Islamic Relief, Orange, Bahar, and IYD.</p>
+      <p>He is proficient in AutoCAD, Revit, ETABS, SAP2000, SewerGEMS, Excel, Power BI, and MS Project. Certified trainer in structural design, documentation, and quantity surveying.</p>
+      <p>Mohammad actively expands his expertise through online platforms and delivers engineering content to empower professionals.</p>
+    </div>
+
+    <!-- روابط التواصل -->
+    <ul>
+      <li><div class="platform"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="platform-icon" alt="LinkedIn" /><a href="https://www.linkedin.com/in/mohammad-dames-212b08364" target="_blank">LinkedIn</a></div></li>
+      <li><div class="platform"><img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" class="platform-icon" alt="Facebook" /><a href="https://www.facebook.com/share/16Tt6FoLAV/" target="_blank">Facebook</a></div></li>
+      <li><div class="platform"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" class="platform-icon" alt="Instagram" /><a href="https://www.instagram.com/eng.mohammad.dames" target="_blank">Instagram</a></div></li>
+      <li><div class="platform"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" class="platform-icon" alt="YouTube" /><a href="https://youtube.com/@mohammad.damesz" target="_blank">YouTube</a></div></li>
+      <li><div class="platform"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" class="platform-icon" alt="Telegram" /><a href="https://t.me/engmohammaddamess" target="_blank">Telegram</a></div></li>
+    </ul>
+  </div>
+
+  <script>
+    function showArabic() {
+      document.getElementById("arabicCV").style.display = "block";
+      document.getElementById("englishCV").style.display = "none";
+    }
+
+    function showEnglish() {
+      document.getElementById("arabicCV").style.display = "none";
+      document.getElementById("englishCV").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
